@@ -14,6 +14,7 @@ export default function Header() {
 
     return (
         <header className={styles.header}>
+            <meta name="ga-site-verification" content="hlT7_jpkTHbhj_YYHDsHXjAf" />
             <nav className={styles.navbar}>
                 {/* Logo et Titre à gauche, masqués lorsque le menu est ouvert */}
                 {!isMenuOpen && (
