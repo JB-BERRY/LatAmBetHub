@@ -1,0 +1,125 @@
+/* app/components/Header.module.css */
+.header {
+    background-color: #ffffff;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex; /* Flexbox pour la barre de navigation */
+    align-items: center; /* Centre verticalement */
+    justify-content: space-between; /* Espace entre les éléments */
+    max-width: 1200px; /* Largeur maximale pour le contenu */
+    margin: 0 auto; /* Centre la barre de navigation */
+    padding: 0 20px; /* Espacement à gauche et à droite */
+}
+
+.logoTitle {
+    display: flex; /* Aligne le logo et le titre */
+    align-items: center; /* Centre verticalement */
+}
+
+.logo {
+    margin-right: 1rem; /* Espace à droite du logo */
+}
+
+.title {
+    font-size: 1.5rem; /* Taille du titre */
+    color: transparent; /* Couleur transparente pour le gradient */
+    background: linear-gradient(90deg, #FFD700, #FF8C00); /* Gradient doré */
+    -webkit-background-clip: text; /* Clip de fond */
+    background-clip: text; /* Clip de fond */
+    margin: 0; /* Pas de marge */
+    font-weight: bold; /* Gras */
+    font-family: 'Inter', sans-serif;
+}
+
+/* Styles pour le bouton hamburger */
+.hamburger {
+    background: none; /* Pas de fond */
+    border: none; /* Pas de bordure */
+    font-size: 1.5rem; /* Taille de l'icône */
+    cursor: pointer; /* Curseur en main */
+    margin-left: auto; 
+}
+
+/* Styles pour les liens du menu */
+.nav-links {
+    list-style: none; /* Pas de style de liste */
+    display: flex; /* En ligne */
+    gap: 2rem; /* Espacement entre les liens */
+    margin-left: auto; /* Pousse les liens vers la droite */
+}
+
+.nav-links li a {
+    font-weight: bold; /* Texte en gras */
+    text-decoration: none; /* Supprime la décoration de lien */
+    color: #252525; /* Couleur du texte, ajuste selon le besoin */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    font-size: 18px;
+}
+  
+.nav-links li a:hover {
+    color: red; /* Couleur au survol */
+}
+
+/* Styles pour le menu mobile */
+.mobileMenu {
+    display: flex; /* Flexbox pour la disposition */
+    flex-direction: column; /* Disposition verticale */
+    align-items: flex-end; 
+    gap: 1rem; /* Espacement entre les liens */
+    position: absolute; /* Positionner de façon absolue */
+    top: 100%; /* Positionner juste en dessous de la barre de navigation */
+    right: 0; /* Alignement à droite */
+    left: 0; /* Alignement à gauche pour occuper toute la largeur */
+    background-color: white; /* Fond blanc pour la div */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre pour style */
+    z-index: 999; /* Assurez-vous qu'il est au-dessus des autres éléments */
+    padding: 1rem; /* Ajout d'un padding pour les éléments du menu */
+    font-weight: bold; /* Texte en gras */
+    color: #252525; /* Couleur du texte, ajuste selon le besoin */
+    font-family: 'Roboto', sans-serif;
+    font-weight: 550;
+    font-size: 18px;
+}
+
+/* Styles pour les liens dans le menu mobile */
+.mobileMenu ul {
+    list-style: none; /* Pas de style de liste */
+    padding: 0; /* Pas de padding */
+    margin: 0; /* Pas de marge */
+}
+
+.mobileMenu li {
+    margin: 0; /* Pas de marge pour les liens */
+}
+
+.mobileMenu li a:hover {
+    color: red; /* Couleur au survol */
+}
+
+
+/* Styles responsives */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Masquer les liens sur mobile */
+    }
+
+    .hamburger {
+        right: 10rem;
+    }
+
+}
+
+@media (min-width: 769px) {
+    .hamburger {
+        display: none; /* Masquer le hamburger sur les grands écrans */
+    }
+}

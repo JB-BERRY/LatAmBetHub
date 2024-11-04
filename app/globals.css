@@ -14,8 +14,136 @@
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+/* app/globals.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+body {/* Appliquer la police Inter au corps du document */
+    margin: 0; /* Supprimer la marge par défaut */
+    padding: 0; /* Supprimer le padding par défaut */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+.ag-section-bg.homepage-lp-pattern {
+  background-image: linear-gradient(180deg, rgba(241, 241, 241, 0) 0%, rgba(241, 241, 241, 1) 40%), url('/background-pattern.svg');
+  background-size: 15rem; /* Ajustez si nécessaire, 'auto' pour garder la taille originale de l'image */
+  background-repeat: repeat; 
+  background-position: center; /* Centre l'image de fond */
+  height: 140vh; /* Ajustez la hauteur selon vos besoins */
+  width: 100%; /* Ajustez la largeur selon vos besoins */
+}
+
+.justified-text {
+  text-align: justify; /* Justify the paragraph text */
+  margin: 0 300px; /* Equal margin on left and right */
+  padding: 0 15px; /* Optional: Add some margin below paragraphs */
+  color: #707070;
+  font-weight: 600;
+}
+
+.center-top {
+  display: flex;
+  flex-direction: column; /* Align children in a column */
+  align-items: center; /* Center children horizontally */
+  justify-content: flex-start; /* Align children at the top */
+  padding-top: 100px; /* Optional: Add some padding from the top */
+}
+
+h1 {
+  margin-bottom: 20px; /* Bottom margin */
+  font-size: 3.0rem; /* Default font size for larger screens */
+  color: #333; /* Text color */
+  font-weight: bold;
+}
+
+@media (max-width: 1024px) {
+  .justified-text {
+    margin: 0 100px; /* Adjust margin for tablets */
+    color: #707070;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 3.6rem; /* Adjust font size for tablets */
+}
+
+.ag-section-bg.homepage-lp-pattern {
+  height: 100vh; /* Adjust the height for mobile */
+}
+}
+
+@media (max-width: 768px) {
+  .ag-section-bg.homepage-lp-pattern {
+    height: 150vh; /* Adjust the height for mobile */
+  }
+
+  h1 {
+    font-size: 2.3rem; /* Adjust font size for mobile */
+}
+
+.justified-text {
+  margin: 0 50px; /* Adjust margin for tablets */
+  color: #707070;
+  font-weight: 600;
+}
+}
+
+@media (max-width: 480px) {
+  h1 {
+      font-size: 1.5rem; /* Further adjust font size for smaller devices */
+  }
+
+  .ag-section-bg.homepage-lp-pattern {
+    height: 180vh; /* Adjust the height for mobile */
+  }
+}
+
+.menu {
+  display: flex;
+  gap: 16px; /* Space between items */
+  padding: 16px;
+  background-color: #26292d;
+  border-radius: 8px;
+  overflow-x: auto;
+  justify-content: space-around;
+  align-items: center; /* Ensures items are centered vertically */
+}
+
+.menu {
+  display: flex;
+  gap: 16px;
+  padding: 16px;
+  background-color: #26292d;
+  border-radius: 8px;
+  overflow-x: auto;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ffffff;
+  min-width: 60px;
+  padding: 0 16px;
+  position: relative;
+}
+
+/* Transparent divider */
+.menu-item:not(:last-child)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  background-color: rgba(255, 255, 255, 1.0); /* Adjust transparency with the alpha value */
+}
+
+/* Icon styles */
+.menu-icon {
+  width: 32px;
+  height: 32px;
+  margin-bottom: 4px;
 }

@@ -1,0 +1,30 @@
+/* app/components/Footer.module.css */
+.footer {
+    background-color: #ffffff; /* Couleur de fond */
+    padding: 2rem 0; /* Espacement en haut et en bas */
+    text-align: center; /* Centrer le texte */
+}
+
+.container {
+    max-width: 1200px; /* Largeur maximale */
+    margin: 0 auto; /* Centrer le contenu */
+    padding: 0 20px; /* Espacement à gauche et à droite */
+}
+
+.links {
+    list-style: none; /* Supprimer les puces */
+    padding: 0; /* Supprimer le padding */
+    margin: 1rem 0 0; /* Marge au-dessus */
+    display: flex; /* Disposition en ligne */
+    justify-content: center; /* Centrer les liens */
+    gap: 1rem; /* Espacement entre les liens */
+}
+
+.links li {
+    margin: 0; /* Pas de marge */
+}
+
+.links a {
+    text-decoration: none; /* Pas de soulignement */
+    color: #333; /* Couleur du texte */
+}
