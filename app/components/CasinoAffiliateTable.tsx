@@ -34,11 +34,14 @@ const CasinoAffiliateTable: React.FC<CasinoAffiliateTableProps> = ({ casinos }) 
           {casinos.map((casino, index) => (
             <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
               <td className="p-2 border-b border-gray-300 text-center">
-                <Image 
-                  src={`/logos/casinos/${casino.logoFileName}`}
-                  alt={`${casino.logoFileName.split('.')[0]} logo`}
-                  className="w-20 h-auto max-h-12 mx-auto"
-                />
+                <div className="relative w-20 h-12 mx-auto">
+                  <Image 
+                    src={`/logos/casinos/${casino.logoFileName}`}
+                    alt={`${casino.logoFileName.split('.')[0]} logo`}
+                    layout="fill" // Permet d'ajuster l'image en fonction de la taille du conteneur
+                    objectFit="contain" // Ajuste l'image sans la déformer
+                  />
+                </div>
               </td>
               <td className="p-2 border-b border-gray-300">{casino.bonus}</td>
               <td className="p-2 border-b border-gray-300">{casino.paymentMethods}</td>
