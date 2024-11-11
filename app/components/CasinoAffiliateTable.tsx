@@ -1,6 +1,7 @@
 "use client";
 
 import React from 'react';
+import Image from 'next/image';
 
 type Casino = {
   logoFileName: string;
@@ -22,7 +23,7 @@ const CasinoAffiliateTable: React.FC<CasinoAffiliateTableProps> = ({ casinos }) 
         <thead>
           <tr className="bg-gray-100 text-left">
             <th className="p-2 border-b border-gray-300">Casino</th>
-            <th className="p-2 border-b border-gray-300">Bonus d'Inscription</th>
+            <th className="p-2 border-b border-gray-300">Bonus d&apos;Inscription</th>
             <th className="p-2 border-b border-gray-300">Méthodes de Paiement</th>
             <th className="p-2 border-b border-gray-300">Exigences de Paris</th>
             <th className="p-2 border-b border-gray-300">Évaluation</th>
@@ -33,7 +34,7 @@ const CasinoAffiliateTable: React.FC<CasinoAffiliateTableProps> = ({ casinos }) 
           {casinos.map((casino, index) => (
             <tr key={index} className={index % 2 === 0 ? 'bg-white' : 'bg-gray-50'}>
               <td className="p-2 border-b border-gray-300 text-center">
-                <img
+                <Image 
                   src={`/logos/casinos/${casino.logoFileName}`}
                   alt={`${casino.logoFileName.split('.')[0]} logo`}
                   className="w-20 h-auto max-h-12 mx-auto"
