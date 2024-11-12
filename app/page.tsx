@@ -40,7 +40,7 @@ const HomePage = () => {
       rating: '4.5/5'
     },
     {
-      logoFileName: 'luva.png',
+      logoFileName: 'luva_bet_logo.png',
       affiliateLink: 'https://exemple.com/affiliation-casino1',
       bonus: '100 % jusqu\'à 600 €',
       paymentMethods: 'Visa, PayPal, Bitcoin',
