@@ -16,7 +16,7 @@ const HomePage = () => {
       rating: '4.5/5'
     },
     {
-      logoFileName: '22betlogo.png',
+      logoFileName: 'apuesta.png',
       affiliateLink: 'https://exemple.com/affiliation-casino1',
       bonus: '100 % jusqu\'à 600 €',
       paymentMethods: 'Visa, PayPal, Bitcoin',
@@ -24,7 +24,7 @@ const HomePage = () => {
       rating: '4.5/5'
     },
     {
-      logoFileName: '22betlogo.png',
+      logoFileName: 'bet7.png',
       affiliateLink: 'https://exemple.com/affiliation-casino1',
       bonus: '100 % jusqu\'à 600 €',
       paymentMethods: 'Visa, PayPal, Bitcoin',
@@ -32,7 +32,7 @@ const HomePage = () => {
       rating: '4.5/5'
     },
     {
-      logoFileName: '22betlogo.png',
+      logoFileName: 'br4.png',
       affiliateLink: 'https://exemple.com/affiliation-casino1',
       bonus: '100 % jusqu\'à 600 €',
       paymentMethods: 'Visa, PayPal, Bitcoin',
@@ -40,7 +40,7 @@ const HomePage = () => {
       rating: '4.5/5'
     },
     {
-      logoFileName: '22betlogo.png',
+      logoFileName: 'luva.png',
       affiliateLink: 'https://exemple.com/affiliation-casino1',
       bonus: '100 % jusqu\'à 600 €',
       paymentMethods: 'Visa, PayPal, Bitcoin',
@@ -48,14 +48,14 @@ const HomePage = () => {
       rating: '4.5/5'
     },
     {
-      logoFileName: '22betlogo.png',
+      logoFileName: 'f12.png',
       affiliateLink: 'https://exemple.com/affiliation-casino1',
       bonus: '100 % jusqu\'à 600 €',
       paymentMethods: 'Visa, PayPal, Bitcoin',
       wageringRequirements: '5x sur 7 jours',
       rating: '4.5/5'
     },{
-      logoFileName: '22betlogo.png',
+      logoFileName: 'nossabet.png',
       affiliateLink: 'https://exemple.com/affiliation-casino1',
       bonus: '100 % jusqu\'à 600 €',
       paymentMethods: 'Visa, PayPal, Bitcoin',
